@@ -2,7 +2,7 @@
  * SPIP02.c
  *
  * Created: 2/4/2026 11:10:15 PM
- * Author : Eliph
+ * Author : Erick Javier Segura 231141 - Samuel Urbina 23434
  */ 
 
 #include <avr/io.h>
@@ -46,6 +46,7 @@ ISR(SPI_STC_vect){
 	PORTD &= 0x00;
 	PORTB &= 0b001111;
 	PORTD = (PORTD & 0x03) | (SPI_VALUE & 0xFC);
+
 	PORTB = (PORTB & 0xFC) | (SPI_VALUE & 0x03);
 }
 
