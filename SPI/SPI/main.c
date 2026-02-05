@@ -2,7 +2,7 @@
  * SPI.c
  *
  * Created: 1/28/2026 9:55:15 PM
- * Author : Eliph
+ * Author : Erick Javier Segura 231141 - Samuel Urbina 23434
  */ 
 
 #define F_CPU 1000000
@@ -87,6 +87,7 @@ int main(void)
 		USART_TR("\r\n");
 		USART_TR("ADC -> PC1:");
 		USART_TR_ADC(ADC_PC1);
+
 		USART_ADC_OUT();
 		USART_TR("\r\n");
 		
