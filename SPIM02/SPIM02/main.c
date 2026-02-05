@@ -2,7 +2,7 @@
  * SPIM02.c
  *
  * Created: 2/4/2026 11:07:32 PM
- * Author : Eliph
+ * Author : Erick Javier Segura 231141 - Samuel Urbina 23434
  */ 
 
 #include <avr/io.h>
@@ -92,6 +92,7 @@ int main(void)
 			PORTD = (PORTD & 0x03) | (RS & 0xFC);
 
 			// PORTB: bits 0..1
+
 			PORTB = (PORTB & 0xFC) | (RS & 0x03);
 			
 			//TRANSMIT: RS.
